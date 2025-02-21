@@ -53,7 +53,7 @@ public class QuestionController {
 
         Optional<ActiveQuestion> question = this.activeQuestionRepository.findById(1L);
 
-        if (!question.get().isFinished()) {
+        if (question.isPresent() && !question.get().isFinished()) {
             res.setMessage("Quiz already started");
             res.setStatus(HttpStatus.BAD_REQUEST);
             res.setStatusCode(400);
