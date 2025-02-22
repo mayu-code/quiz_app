@@ -22,7 +22,7 @@ import com.app.quiz_app.repository.ActiveQuestionRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://quizbyayush.netlify.app")
+@CrossOrigin(origins = { "http://localhost:5173", "http://localhost:5174", "https://quizbyayush.netlify.app" })
 public class UserController {
 
     @Autowired
