@@ -30,7 +30,7 @@ import com.app.quiz_app.repository.AdminRepository;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin
+@CrossOrigin(origins = "https://quizbyayush.netlify.app")
 public class AuthController {
 
     @Autowired
